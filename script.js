@@ -1,9 +1,19 @@
 'use strict';
 
-console.log(document.querySelector('.message').textContent);
-document.querySelector('.message').textContent = 'Correct Number!! 🥳 ';
-console.log((document.querySelector('.number').textContent = 13));
-console.log((document.querySelector('.score').textContent = 55));
+const secretNumber = Math.trunc(Math.random() * 20) + 1;
+document.querySelector('.number').textContent = secretNumber;
 
-document.querySelector('.guess').value = 0;
-console.log(document.querySelector('.guess').value);
+document.querySelector('.check').addEventListener('click', function () {
+  const guess = Number(document.querySelector('.guess').value);
+  console.log(guess, typeof guess);
+
+  if (!guess) {
+    document.querySelector('.message').textContent = '<--Type a number!';
+  } else if (guess === secretNumber) {
+    document.querySelector('.message').textContent = 'You did it!! 🥳 ';
+  } else if (guess < secretNumber) {
+    document.querySelector('.message').textContent = 'Too Low!';
+  } else if (guess > secretNumber) {
+    document.querySelector('.message').textContent = 'Too High!';
+  }
+});

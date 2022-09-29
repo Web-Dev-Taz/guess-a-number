@@ -28,7 +28,7 @@ header {
 
 main {
   height: 65vh;
-  color: #d9376e;
+  color: #ff5c5c;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -111,7 +111,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #d9376e;
+  background-color: #ff5c5c;
 }
 
 .message {
@@ -124,6 +124,6 @@ h1 {
 }
 
 input:focus {
-  border-color: #d9376e;
+  border-color: #ff5c5c;
   outline: none;
 }
