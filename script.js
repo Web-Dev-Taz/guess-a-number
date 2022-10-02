@@ -11,7 +11,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = '<--Type a number!';
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent =
-      'Correct!! You are now a member of the number game homies club 🥳 ';
+      'Correct!! You are a gold star member of the number game club 🥳 ';
 
     document.querySelector('body').style.backgroundColor = '#005555';
 

@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'Lobster', cursive;
   color: #ff8e3c;
   background-color: #eff0f3;
   /* background-color: #60b347; */
